@@ -1,0 +1,93 @@
+DATE,LOC,lat,long,NAME,DEATHS,INJURIES
+4/16/2007,"Blacksburg, VA",37.229573,-80.413939,Virginia Tech,33,25
+2/8/2008,"Baton Rouge, LA",30.458283,-91.14032,Louisiana Technical College ,3,0
+2/14/2008,"DeKalb, IL",41.929474,-88.750365,Northern Illinois University ,6,21
+10/26/2008,"Conway, AR",35.088696,-92.442101,University of Central Arkansas ,2,1
+4/26/2009,"Hampton, VA",37.029869,-76.345222,Hampton University,0,3
+5/18/2009,"Cambridge, MA",42.373616,-71.109733,Harvard College,1,0
+9/3/2009,"San Bruno, CA",37.63049,-122.411084,Skyline College ,0,1
+10/3/2010,"Elizabeth City, NC",36.294601,-76.251046,MidAtlantic Christian University ,1,0
+2/6/2011,"Youngston, OH",41.09978,-80.649519,Youngstown State University,1,11
+4/2/2012,"Oakland, CA",37.804364,-122.271114,Oikos University ,7,3
+10/31/2012,"LA, CA",34.052234,-118.243685,University of Southern California,0,4
+1/15/2013,"St.Louis, MO",38.627003,-90.199404,Stevens Institute of Business and Arts ,0,2
+1/15/2013,"Hazard, KY",37.24954,-83.193228,Hazard Community and Technical College,3,0
+1/16/2013,"Chicago, IL ",41.878114,-87.629798,Chicago State University ,1,0
+1/22/2013,"Houston, TX",29.760427,-95.369803,Lone Star College- North Harris,0,3
+2/1/2013,"Atlanta, GA",33.748995,-84.387982,Morehouse College,,
+2/7/2013,"Fort Pierce, FL",27.446706,-80.325606,Inidian River State College,,
+3/18/2013,"Orlando, FL",28.538336,-81.379236,University of Central Florida,1,0
+4/9/2013,"Cypress, TX",29.971691,-95.693786,Lone Star College- Cyfair,0,14
+4/12/2013,"Christiansburg, VA",37.129852,-80.408939,New River Community College,0,2
+4/13/2013,"Elizabeth City, NC",36.294601,-76.251046,Elizabeth City State University,,
+4/15/2013,"Grambling, LA",32.52765,-92.71404,Grambling State University ,0,3
+4/18/2013,"Cambridge, MA",42.373616,-71.109733,Massachussetts Institute of Technology,2,1
+6/7/2013,"Santa Monica, CA",34.019454,-118.491191,Santa Monica College ,6,4
+6/19/2013,"West Palm Beach, FL",26.715342,-80.053375,Alexander W. Dreyfoos School of the Arts,,
+9/21/2013,"Savannah, GA",32.083541,-81.099834,Savannah State University,,
+10/4/2013,"Pine Hills, FL",28.557779,-81.453405,Agape Christian Academy,,
+11/2/2013,"Greeensboro, NC",36.072635,-79.791975,North Carolina A&T State University,0,1
+11/21/2013,"Rapid City, SD",44.080543,-103.231015,South Dakota School of Mines & Technology,,
+1/20/2014,"Chester, PA",39.849557,-75.355746,Widener University,0,1
+1/21/2014,"West Lafayette, IN",40.425869,-86.908066,Purdue University,1,0
+1/24/2014,"Orangeburg, SC",33.49182,-80.855648,South Carolina State University,1,0
+1/25/2014,"Los Angeles, CA",34.052234,-118.243685,Los Angeles Valley College,1,0
+1/28/2014,"Nashville, TN",36.162664,-86.781602,Tennessee State University,0,1
+1/30/2014,"Palm Bay, Florida",28.034462,-80.588665,Eastern Florida State College,0,1
+2/12/2014,"Jackson, TN",35.614517,-88.813947,Union University,,
+2/22/2014,"Augusta, GA",33.473498,-82.010515,Georgia Regents University,0,1
+3/2/2014,"Westminster, MD",39.575379,-76.995815,McDaniel College,,
+3/8/2014,"Oshkosh, WI",44.024706,-88.542614,University of Wisconsin- Oshkosh,,
+3/23/2014,"Newark, DE",39.683723,-75.749657,University of Delaware,,
+3/30/2014,"Savannah, GA",32.083541,-81.099834,Savannah State University,,
+4/3/2014,"Kent, OH",41.153667,-81.357886,Kent State University,,
+4/16/2014,"Council Bluffs, IA",41.261944,-95.860833,Iowa Western Community College,,
+4/16/2014,"Tuscaloosa, AL",33.209841,-87.569173,Stillman College,,
+5/2/2014,"Milwaukee, WI",43.038903,-87.906474,Marquette University,,
+5/4/2014,"Augusta, GA",33.473498,-82.010515,Paine College,0,1
+5/5/2014,"Augusta, GA",33.473498,-82.010515,Paine College,0,1
+5/8/2014,"Lawrenceville, GA",33.956215,-83.987962,Georgia Gwinnett College,0,1
+5/8/2014,"Georgetown, KY",38.209797,-84.558831,Georgetown College,,
+6/5/2014,"Seattle, WA",47.60621,-122.332071,Seattle Pacific University,1,3
+6/27/2014,"Miami, FL",25.76168,-80.19179,University of Miami,,
+9/2/2014,"Pocatello, ID",42.871303,-112.445534,Idaho State Formal,,
+9/5/2014,"Savannah, GA",32.083541,-81.099834,Savannah State University,,
+9/29/2014,"Terre Haute, IN",39.466703,-87.413909,Indiana State University ,0,1
+9/27/2014,"Nashville, TN",36.162664,-86.781602,Tennessee State University,,
+10/8/2014,"Elizabeth City, NC",36.294601,-76.251046,Elizabeth City State University,,
+10/13/2014,"Nashville, TN",36.162664,-86.781602,Tennessee State University,,
+10/18/2014,"Langston, OK",35.945051,-97.255314,Langston University,,
+11/3/2014,"Dover, DE",39.158168,-75.524368,Delaware State University,,
+11/20/2014,"Tallahassee, FL",30.438256,-84.280733,Florida State University ,1,3
+11/23/2014,"Annapolis, MD",38.978445,-76.492183,St. Johns College,,
+12/5/2014,"Claremore, OK",36.312596,-95.61609,Rogers State University ,1,0
+2/2/2015,"Mankato, MN",44.163578,-93.9994,Minnesota State University ,1,1
+2/5/2015,"Columbia, SC",34.00071,-81.034814,University of South Carolina,1,0
+2/15/2015,"Athens, GA",33.951935,-83.357567,University of Georgia,0,0
+2/23/2015,"Daytona Beach, FL",29.210815,-81.022833,Bethune-Cookman University ,0,3
+4/2/2015,"Jackson, TN",35.614517,-88.813947,Lane College,0,1
+4/3/2015,"Monaca, PN",40.687289,-80.271451,Community College of Beaver County,,
+4/4/2015,"Everett, WA",47.978985,-122.202079,Everret Communtiy College,0,0
+4/13/2015,"Goldsboro, NC",35.384884,-77.992765,Wayme Community College ,1,0
+4/18/2015,"Dover, DE",39.158168,-75.524368,Delaware State University,0,3
+4/19/2015,"Charlotte, NC",35.227087,-80.843127,Johnson C. Smith University ,0,1
+5/4/2015,"Orem, UT",40.296898,-111.694647,Utah Valley University,,
+7/27/2015,"Gainesville, FL",29.651634,-82.324826,University of Florida,,
+8/8/2015,"Wichita, KS",37.687176,-97.330053,Wichita State University ,1,0
+8/26/2015,"Houston, TX",29.760427,-95.369803,Texas Southern University,,
+8/27/2015,"Savannah, GA",32.083541,-81.099834,Savannah State University,1,0
+9/3/2015,"Sacremento, CA",38.581572,-121.4944,Sacremento City College,1,2
+9/14/2015,"Cleveland, MS",33.744002,-90.724819,Delta State University,,
+9/28/2015,"Butte, MT",46.003823,-112.534778,Montana Tech,,
+10/1/2015,"Roseburg, OR",43.216505,-123.341738,Umpqua Community College,10,9
+10/6/2015,"Houston, TX",29.760427,-95.369803,Texas South University ,,
+10/9/2015,"Flagstaff, AZ",35.198284,-111.651302,Northern Arizona University ,1,3
+10/9/2015,"Houston, TX",29.760427,-95.369803,Texas Southern University ,1,1
+10/11/2015,"Tampa, FL",27.950575,-82.457178,University of South Florida,,
+10/15/2915,"Langston, OK",35.945051,-97.255314,Langston University ,,
+10/22/2015,"Nashville, TN",36.162664,-86.781602,Tennessee State University,1,3
+10/25/2015,"Durham, NC",35.994033,-78.898619,North Carolina Central University,,
+11/1/2015,"Winston-Salem, NC",36.09986,-80.244216,Winston-Salem State University ,1,1
+11/29/2015,"Columbus, OH",39.961176,-82.998794,Ohio State University,,
+12/18/2015,"Jackson, TN",35.614517,-88.813947,Lane college ,,
+12/29/2015,"Greeley, CO",40.423314,-104.709132,Aims Community College,,
