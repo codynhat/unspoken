@@ -1,119 +1,22 @@
 html,body{
   height: 100%;
-  width: 100%;
   font-family: "brandon-grotesque";
-  background-color: rgb(188, 190, 192);
 }
-
-@media (max-width: 768px) {
-  html,body{
-    height: 100%;
-    width: 100%;
-    font-family: "brandon-grotesque";
-    font-size: 85%;
-    background-color: rgb(188, 190, 192);
-  }
-}
-
-.row{
-  width: 100%;
-}
-.container-fluid{
-  padding: 0;
+.container, .row{
   height: 100%;
 }
-
-h2, h3{
-  font-family: "brandon-grotesque";
-  color: white;
-  font-weight: 500;
-}
-
-h2{
-  font-size: 2.5em;
-}
-
-h3{
-  font-size: 2em;
-  font-weight: 400;
-}
-
-p{
-  font-family: "brandon-grotesque";
-  font-size: 1.6em;
-  color: white;
-  font-weight: 400;
-}
-
-/* Intro Section */
-img#logo{
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-section#intro{
-  background-color: rgb(188, 190, 192);
+#logo-container {
+  position: relative;
   height: 100%;
 }
-h2#rotate{
-  color: black;
-  font-size: 3.5em;
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
-
-.rw-words span{
-	position: absolute;
-  left: 0;
-	opacity: 0;
-	overflow: hidden;
-	width: 100%;
-}
-
-.rw-words span{
-	animation: rotateWord 26s linear infinite;
-}
-
-
-@-webkit-keyframes rotateWord {
-  0% { opacity: 0; }
-  1% { opacity: 0; -webkit-transform: translateY(-30px); }
-3% { opacity: 1; -webkit-transform: translateY(0px);}
-  7% { opacity: 1; -webkit-transform: translateY(0px); }
-15% { opacity: 0; -webkit-transform: translateY(30px); }
-  100% { opacity: 0; }
-}
-@-ms-keyframes rotateWord {
-    0% { opacity: 0; }
-    1% { opacity: 0; -ms-transform: translateY(-30px); }
-	3% { opacity: 1; -ms-transform: translateY(0px);}
-    7% { opacity: 1; -ms-transform: translateY(0px); }
-	15% { opacity: 0; -ms-transform: translateY(30px); }
-    100% { opacity: 0; }
-}
-@keyframes rotateWord {
-  0% { opacity: 0; }
-  1% { opacity: 0; transform: translateY(-30px); }
-2% { opacity: 1; transform: translateY(0px);}
-  7% { opacity: 1; transform: translateY(0px); }
-8% { opacity: 0; transform: translateY(30px); }
-  100% { opacity: 0; }
-}
-
-/* Map Section */
-#data-vis-1{
-  padding-top: 100px;
-  background-color: black;
-}
-.svg-icon{
-  font-family: FontAwesome;
-  font-size: 21px;
-}
-
-.btn-primary{
-  background-color: #ff3333;
-  border-color: #ff3333;
-}
-
-.btn-primary:hover{
-  background-color: rgb(172, 44, 20);
-  border-color: rgb(172, 44, 20);
+h2.vertical-center{
+  font-family: "brandon-grotesque",serif;
+  font-style: normal;
+  font-weight: 300;
+  margin-top: -20%;
 }
