@@ -48,15 +48,27 @@
       .attr("transform", 'translate(-'+ width/2 + ',-' + height/2 + ')');
 
 
-  for(var i = 0; i < 41; i += 1){
-    var x = Math.floor((Math.random() * width));
-    var y = Math.floor((Math.random() * (height-50)));
-    g.append("svg:image")
+  var g2 = g.append("g");
+
+  var t = 68;
+  for(var i = 0; i < t; i += 1){
+    var minx = -(250/t)*i + 250; // 250 to 20
+    var maxx = ((620-150)/t)*i + 150; // 150 to 620
+    var miny = -(150/t)*i + 150; // 150 to 0
+    var maxy = ((490-150)/t)*i + 150; // 150 to 490
+
+    var x = Math.floor((Math.random() * maxx) + minx);
+    var y = Math.floor((Math.random() * maxy) + miny);
+    g2.append("svg:image")
         .attr("xlink:href", "bullet_hole.svg")
         .attr("width", 50)
         .attr("height", 50)
         .attr("x", x)
-        .attr("y", y);
+        .attr("y", y)
+        .style("visibility", "hidden")
+        .transition()
+        .delay(Math.log(i+10)*1000 - 2000)
+        .style("visibility", "visible");
     }
 
   d3.select("#board").append("h2").text("2013");
