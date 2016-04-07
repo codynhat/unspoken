@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unspoken</title>
+
+    <script src="https://use.typekit.net/pga5ocd.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+    <script src="js/us-states.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unspoken.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <section id="intro">
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2"><img id="logo" class="img-responsive" src="img/logo.png"/> </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2 text-center">
+            <h2>What would you do if this time it happened in your</h2>
+          </div>
+          <div class="col-xs-12 text-center">
+            <h2 id="rotate" class="rw-words">
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2 text-center">
+            <p>Fear starts small in the pit of our stomachs but grows and grows until it takes over our spaces. <br>This feeling often goes <span style="font-weight: 500;
+            color: black;">unspoken.</span></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <a href="#data-vis-1" class="btn btn-circle page-scroll">
+                <img id="scroll-button" src="img/arrow.png"/>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="data-vis-1">
+        <div class="row" style="margin-bottom: 7vw;">
+          <div class="col-xs-8 col-xs-offset-2 col-lg-6 col-lg-offset-3 text-center">
+              <h2>We’ve seen this happen too many times.</h2>
+
+              <h3>In the last 5 years, there were 198 active shooter incidents on school grounds and 22 mass shootings. </h3><h3>These are our lost spaces.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4">
+            <div class="btn-group btn-group-justified">
+              <a id="school_button" class="btn btn-primary">School Shootings</a>
+              <a id="mass_button" class="btn btn-default">Mass Shootings</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2">
+            <div id="map"></div>
+          </div>
+
+        </div>
+      </section>
+      <section id="data-vis-2">
+        <div class="row">
+          <span>
+          <div class="col-xs-10 col-xs-offset-1 text-center bullet-content">
+              <h2>Since 2011, there have been 198 active shooter incidents.</h2>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 text-center bullet-content">
+              <h3>If you look at it in terms of school years, there was almost 20 school shootings per semester.</h3>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 text-center bullet-content">
+              <h3>20 shootings in 65 school days.</h3>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 text-center bullet-content">
+              <h2>This means that every 3 school days...<br>We run the risk of a shooting happening on school grounds.</h2>
+          </div>
+        </span>
+          <div id="bullets" class="col-xs-10 col-xs-offset-1 text-center">
+              <img class="bullet" src="img/bullet.svg" style="left:40px"/>
+              <img class="bullet" src="img/bullet.svg" style="left:80px"/>
+              <img class="bullet" id="bullet3" src="img/bullet.svg" style="left:120px"/>
+              <img class="bullet" src="img/bullet.svg" style="left:160px"/>
+              <img class="bullet" src="img/bullet.svg" style="left:200px"/>
+              <img class="bullet" id="bullet6" src="img/bullet.svg" style="left:240px"/>
+              <img class="bullet" src="img/bullet.svg" style="left:280px"/>
+              <img class="bullet" src="img/bullet.svg" style="left:320px"/>
+              <img class="bullet" id="bullet9" src="img/bullet.svg" style="left:360px"/>
+              <img class="bullet" src="img/bullet.svg" style="left:400px"/>
+              <img class="bullet" src="img/bullet.svg" style="left:440px"/>
+              <img class="bullet" id="bullet12" src="img/bullet.svg" style="left:480px"/>
+              <img class="bullet" src="img/bullet.svg" style="left:520px"/>
+              <img class="bullet" src="img/bullet.svg" style="left:560px"/>
+              <img class="bullet" id="bullet15" src="img/bullet.svg" style="left:600px"/>
+              <img class="bullet" src="img/bullet.svg" style="left:640px"/>
+              <img class="bullet" src="img/bullet.svg" style="left:680px"/>
+              <img class="bullet" id="bullet18" src="img/bullet.svg" style="left:720px"/>
+              <img class="bullet" src="img/bullet.svg" style="left:760px"/>
+              <img class="bullet" src="img/bullet.svg" style="left:800px"/>
+              <img class="bullet" id="bullet21" src="img/bullet.svg" style="left:840px"/>
+              <img class="bullet" src="img/bullet.svg" style="left:880px"/>
+              <img class="bullet" src="img/bullet.svg" style="left:920px"/>
+              <img class="bullet" id="bullet24" src="img/bullet.svg" style="left:960px"/>
+              <img class="bullet" src="img/bullet.svg" style="left:1000px"/>
+              <img class="bullet" src="img/bullet.svg" style="left:1040px"/>
+          </div>
+        </div>
+      </section>
+      <section id="data-vis-3">
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2 col-lg-6 col-lg-offset-3 text-center">
+              <h2>TARGETS</h2>
+          </div>
+        </div>
+      </section>
+      <section id>
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2 col-lg-6 col-lg-offset-3 text-center">
+              <h2>INFOGRAPHIC</h2>
+          </div>
+        </div>
+      </section>
+      <section id="petition">
+        <div class="row" style="margin-bottom: 5vw;">
+          <div class="col-xs-8 col-xs-offset-2 col-lg-6 col-lg-offset-3 text-center">
+              <h4 class='petition'>It is time to take matters into our own hands. We do not want our fears to remain unspoken while we wait for administrative action. If you would like to be part of this solution, please consider signing our petition.</h4>
+              <h4 class='petition'>Together we can take back our spaces.</h4>
+
+              <hr class='petition'>
+
+              <h3 class='petition'>We, the community of the University of Oregon, petition the administration to require active shooter training for faculty, staff, and students affiliated with the University of Oregon.</h3>
+
+              <h3 class='petition'>With a rise in active shooter incidents across the country, individuals on campus should be required to engage in Active Shooter response trainings and discussions.</h3>
+              <br>
+              <h3 class='petition'><i>I request that the University of Oregon administration require active shooter trainings for faculty, staff, and students.</i></h3>
+          </div>
+        </div>
+        <div class="row" style="padding-bottom: 8vw;">
+          <div class="col-xs-10 col-xs-offset-1 col-lg-2 col-lg-offset-4 text-center">
+              <input type="text" placeholder="First Name">
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-lg-2 col-lg-offset-0 text-center">
+              <input type="text" placeholder="Last Name">
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-lg-4 col-lg-offset-4 text-center">
+              <input type="text" placeholder="Email">
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-lg-4 col-lg-offset-4 text-center">
+              <textarea placeholder="Share your story (optional)"></textarea>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-lg-4 col-lg-offset-4 text-center">
+              <a href="#" id="sign" class="btn btn-primary">SIGN</a>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-lg-4 col-lg-offset-4 text-center">
+              <a href="#"><img class="share" src="img/facebook.png"/></a>
+              <a href="#"><img class="share" src="img/twitter.png"/></a>
+          </div>
+        </div>
+      </section>
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/bullets.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    </script>
+  </body>
+</html>

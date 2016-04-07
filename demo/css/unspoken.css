@@ -1,0 +1,252 @@
+html,body{
+  height: 100%;
+  width: 100%;
+  font-family: "brandon-grotesque";
+  background-color: rgb(188, 190, 192);
+}
+
+@media (max-width: 768px) {
+  html,body{
+    height: 100%;
+    width: 100%;
+    font-family: "brandon-grotesque";
+    font-size: 85%;
+    background-color: rgb(188, 190, 192);
+  }
+}
+
+.row{
+  width: 100%;
+}
+.container-fluid{
+  padding: 0;
+}
+
+h2, h3, h4{
+  font-family: "brandon-grotesque";
+  color: white;
+}
+
+h2{
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+h3{
+  font-size: 2em;
+  font-weight: 400;
+}
+
+h4{
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+p{
+  font-family: "brandon-grotesque";
+  font-size: 1.6em;
+  color: white;
+  font-weight: 400;
+}
+
+.alternate{
+  color: black;
+}
+
+/* Intro Section */
+img#logo{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+section#intro{
+  background-color: rgb(188, 190, 192);
+  padding-bottom: 50px;
+}
+
+h2#rotate{
+  color: black;
+  font-size: 4em;
+  min-height: 1.1em;
+  margin-bottom: 21px;
+}
+
+@media (max-width: 768px) {
+  img#logo{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+.rw-words span{
+	position: absolute;
+  left: 0;
+	opacity: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+.rw-words span{
+	animation: rotateWord 26s linear infinite;
+}
+
+
+@-webkit-keyframes rotateWord {
+  0% { opacity: 0; }
+  1% { opacity: 0; -webkit-transform: translateY(-30px); }
+3% { opacity: 1; -webkit-transform: translateY(0px);}
+  7% { opacity: 1; -webkit-transform: translateY(0px); }
+15% { opacity: 0; -webkit-transform: translateY(30px); }
+  100% { opacity: 0; }
+}
+@-ms-keyframes rotateWord {
+    0% { opacity: 0; }
+    1% { opacity: 0; -ms-transform: translateY(-30px); }
+	3% { opacity: 1; -ms-transform: translateY(0px);}
+    7% { opacity: 1; -ms-transform: translateY(0px); }
+	15% { opacity: 0; -ms-transform: translateY(30px); }
+    100% { opacity: 0; }
+}
+@keyframes rotateWord {
+  0% { opacity: 0; }
+  1% { opacity: 0; transform: translateY(-30px); }
+2% { opacity: 1; transform: translateY(0px);}
+  7% { opacity: 1; transform: translateY(0px); }
+8% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 0; }
+}
+
+img#scroll-button{
+  width: 50px;
+  margin-top: 50px;
+}
+
+img#scroll-button:hover{
+  opacity: 0.6;
+}
+
+.btn{
+  font-size: 1.4em;
+}
+
+.btn:active{
+   -webkit-box-shadow: none;
+   box-shadow: none;
+}
+
+/* Map Section */
+#data-vis-1{
+  padding-top: 100px;
+  background-color: black;
+}
+.svg-icon{
+  font-family: FontAwesome;
+  font-size: 21px;
+}
+
+.btn-primary{
+  background-color: #ff3333;
+  border-color: #ff3333;
+}
+
+.btn-primary:hover{
+  background-color: rgb(172, 44, 20);
+  border-color: rgb(172, 44, 20);
+}
+
+
+/* Bullets Data Vis */
+section#data-vis-2{
+  background-color: rgb(188, 190, 192);
+  padding-bottom: 400px;
+  padding-top: 100px;
+}
+
+#bullets{
+  margin-top: 200px;
+}
+
+img.bullet{
+  height: 150px;
+  position: absolute;
+}
+
+div.bullet-content{
+  margin-bottom: 50px;
+  z-index: 10;
+}
+
+div.bullet-content:last-child{
+  margin-bottom: 0px;
+}
+
+div.bullet-content > h2, div.bullet-content > h3{
+  color: black;
+}
+
+/* Target Data Vis */
+section#data-vis-3{
+  background-color: black;
+}
+
+/* Info Data Vis */
+section#data-vis-4{
+  background-color: rgb(188, 190, 192);
+}
+
+
+/* Petition Section */
+#petition{
+  padding-top: 100px;
+  background-color: black;
+}
+
+h3.petition{
+  font-size: 1.75em;
+}
+
+h4.petition{
+  /*font-style: italic;*/
+}
+
+hr.petition{
+  border-color: #ff3333;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+textarea{
+    height: 200px;
+}
+
+input[type="text"], textarea {
+  color: white;
+  font-size: 1.5em;
+  padding: 5px;
+  background-color: black;
+  border: none;
+  border-bottom: solid 2px white;
+  transition: border 0.3s;
+  width: 100%;
+  margin-bottom: 50px;
+}
+input[type="text"]:focus, textarea:focus,
+input[type="text"].focus, textarea.focus {
+  border-bottom: solid 2px white;
+  outline: none;
+}
+
+a#sign{
+  margin-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+img.share{
+  width: 30px;
+  margin: 10px;
+}
+
+img.share:hover{
+  opacity: 0.6;
+}
