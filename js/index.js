@@ -18,3 +18,8 @@ $(function() {
         event.preventDefault();
     });
 });
+
+
+/* Share buttons */
+$('#btn-facebook').attr('href', 'https://www.facebook.com/sharer/sharer.php?u=http%3A//www.unspoken.io');
+$('#btn-twitter').attr('href', 'https://twitter.com/intent/tweet?text=message&url=http%3A//www.unspoken.io');
