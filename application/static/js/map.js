@@ -137,15 +137,15 @@ function setData(data_file){
 }
 
 
-setData("data/school_data");
+setData("/static/data/school_data");
 d3.select("#school_button").on("click", function(){
-  setData("data/school_data");
+  setData("/static/data/school_data");
   d3.select(this).attr('class', 'btn btn-primary');
   d3.select("#mass_button").attr('class', 'btn btn-default');
 });
 
 d3.select("#mass_button").on("click", function(){
-  setData("data/mass_data");
+  setData("/static/data/mass_data");
   d3.select(this).attr('class', 'btn btn-primary');
   d3.select("#school_button").attr('class', 'btn btn-default');
 });

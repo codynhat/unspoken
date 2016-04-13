@@ -230,13 +230,16 @@ input[type="text"], textarea {
   width: 100%;
   margin-bottom: 50px;
 }
+input.invalid[type="text"] {
+  border-bottom: solid 2px #ff3333;
+}
 input[type="text"]:focus, textarea:focus,
 input[type="text"].focus, textarea.focus {
   border-bottom: solid 2px white;
   outline: none;
 }
 
-a#sign{
+button#sign{
   margin-bottom: 40px;
   padding-left: 30px;
   padding-right: 30px;
@@ -249,4 +252,9 @@ img.share{
 
 img.share:hover{
   opacity: 0.6;
+}
+
+.status{
+  font-size: 1.2em;
+  color: #ff3333;
 }
