@@ -29,6 +29,9 @@ function create_bullets(){
       var p = 40+(a*40);
       var n = (i*bullets_per_row) + a+1;
       var bullet = $('<img>').attr('id', 'bullet' + n).attr('class', 'bullet').attr('src', '/static/img/bullet.svg').attr('style', 'left:' + p + 'px; top:' + py + 'px');
+      if(p > row_width){
+        continue;
+      }
       row.append(bullet);
     }
     if(i > 0){
