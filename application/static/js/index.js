@@ -58,7 +58,6 @@ $("#sign").click(function(){
 
   $.post("/_petition", { first_name: first_name, last_name: last_name, email: email, story: story})
     .done(function(data) {
-      console.log(data);
       $('#sign').attr('class', 'btn btn-success').text('THANKS!');
       $("#first_name").prop('disabled', true);
       $("#last_name").prop('disabled', true);
