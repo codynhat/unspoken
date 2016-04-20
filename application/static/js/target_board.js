@@ -22,8 +22,8 @@ var g2 = g.append("g");
 d3.select("#board").append("h2").attr('id', 'board-year').attr('style', 'color:black');
 
 
-var years = ["2013", "2014", "2015"];
-var ts = [68, 50, 100];
+var years = ["2013", "2014", "2015", "2016"];
+var ts = [41, 68, 64, 14];
 var j = 0;
 var started = false;
 function showYear(){
