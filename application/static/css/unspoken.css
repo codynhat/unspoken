@@ -55,6 +55,24 @@ p{
   color: black;
 }
 
+/* Progress Bar */
+div#progress-col{
+  height: 95%;
+  background-color: #5C5D5F;
+  width: 15px;
+  position: fixed;
+  left: 10px;
+  top: 2.5%;
+}
+
+div#progress-bar{
+  height: 50px;
+  background-color: black;
+  width: 100%;
+  position: relative;
+  top:0px;
+}
+
 /* Intro Section */
 img#logo{
   margin-top: 100px;

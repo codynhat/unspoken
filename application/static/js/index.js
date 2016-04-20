@@ -67,3 +67,13 @@ $("#sign").click(function(){
     });
 
 });
+
+/* Progress Bar */
+$(window).scroll(function(){
+  var progress = $(window).scrollTop()/($( document ).height()-$(window).height());
+  var scroll_pos = progress * $('#progress-col').height()-$('#progress-bar').height();
+  if(scroll_pos < 0){
+    scroll_pos = 0;
+  }
+  $('#progress-bar').css('top',scroll_pos);
+});
