@@ -1,5 +1,4 @@
 /* Intro */
-
 var rotating_words = ["Classroom", "Work Place", "Movie Theater", "Bank", "Mall", "Restaurant", "Concert Hall", "Miltary Base", "Bar", "Church", "Stadium", "Gym", "Coffee Shop"];
 
 var rw_words = d3.select(".rw-words");
@@ -66,6 +65,16 @@ $("#sign").click(function(){
       $('.hide').show();
     });
 
+});
+
+$.get("/_petition").done(function(data) {
+    var results = data["results"];
+    console.log($("#petition").position());
+    for(var i = 0; i < 30; i++){
+      var name = results[0];
+      var signature = $("<h2>").text(name).attr('class', 'signature').css('top', $("#petition").offset().top+100);
+      $('#petition').prepend(signature);
+    }
 });
 
 /* Progress Bar */
