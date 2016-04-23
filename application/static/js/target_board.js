@@ -50,7 +50,7 @@ function showBullets(){
           .attr("y", y)
           .style("visibility", "hidden")
           .transition()
-          .delay(Math.log(i+10)*1200 - 2000)
+          .delay(Math.log(i+10)*1800 - 2000)
           .style("visibility", "visible");
     }
   }

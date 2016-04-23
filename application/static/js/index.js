@@ -3,8 +3,9 @@ var rotating_words = ["Classroom", "Work Place", "Movie Theater", "Bank", "Mall"
 
 var rw_words = d3.select(".rw-words");
 for(var i in rotating_words){
+  var v = (i*2)+1;
   rw_words.append('span').text(rotating_words[i].toUpperCase() + " ?")
-          .style('animation-delay', i*2 + 's');
+          .style('animation-delay', v + 's');
 }
 
 
@@ -25,6 +26,11 @@ $('#btn-twitter').attr('href', 'https://twitter.com/intent/tweet?text=message&ur
 
 
 /* Petition Form */
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
+
 $('.status').hide();
 
 $('input').focus(function(){
@@ -37,45 +43,52 @@ $("#sign").click(function(){
   var email = $('#email').val();
   var story = $('#story').val();
   var valid = true;
-  if(first_name.length == 0){
-    valid = false;
-    $('#first_name').attr('class', 'invalid');
-  }
-  if(last_name.length == 0){
-    valid = false;
-    $('#last_name').attr('class', 'invalid');
-  }
-  if(email.length == 0){
+
+
+  if(email.length == 0 || validateEmail(email) == false){
     valid = false;
     $('#email').attr('class', 'invalid');
+    $('.status').text("*Please enter a valid email").show();
+  }
+  if(last_name.length == 0 || last_name.length > 35){
+    valid = false;
+    $('#last_name').attr('class', 'invalid');
+    $('.status').text("*Name and email are required").show();
+  }
+  if(first_name.length == 0 || first_name.length > 35){
+    valid = false;
+    $('#first_name').attr('class', 'invalid');
+    $('.status').text("*Name and email are required").show();
   }
 
   if(valid == false){
-    $('.status').show();
     return;
   }
 
   $.post("/_petition", { first_name: first_name, last_name: last_name, email: email, story: story})
     .done(function(data) {
-      $('#sign').attr('class', 'btn btn-success').text('THANKS!');
+      $('#sign').text('THANKS!');
       $("#first_name").prop('disabled', true);
       $("#last_name").prop('disabled', true);
       $("#email").prop('disabled', true);
       $("#story").prop('disabled', true);
       $('.hide').show();
+      load_signatures(data);
     });
 
 });
 
-$.get("/_petition").done(function(data) {
+function load_signatures(data) {
+    $('#signatures').empty();
     var results = data["results"];
-    console.log($("#petition").position());
-    for(var i = 0; i < 30; i++){
-      var name = results[0];
-      var signature = $("<h2>").text(name).attr('class', 'signature').css('top', $("#petition").offset().top+100);
-      $('#petition').prepend(signature);
+    for(var i = 0; i < results.length; i++){
+      var name = results[i];
+      var signature = $("<h2>").text(name).attr('class', 'signature');
+      $('#signatures').prepend(signature);
     }
-});
+}
+
+$.get("/_petition").done(load_signatures);
 
 /* Progress Bar */
 $(window).scroll(function(){

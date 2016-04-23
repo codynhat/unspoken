@@ -15,6 +15,15 @@ html,body{
   }
 }
 
+#concrete{
+  position: fixed;
+  background-image: url('/static/img/concrete.jpg');
+  height: 100%;
+  width: 100%;
+  top:0px;
+  opacity: 0.35;
+}
+
 .row{
   width: 100%;
   margin-left: 0px;
@@ -114,17 +123,17 @@ h2#rotate{
 @-webkit-keyframes rotateWord {
   0% { opacity: 0; }
   1% { opacity: 0; -webkit-transform: translateY(-30px); }
-3% { opacity: 1; -webkit-transform: translateY(0px);}
+2% { opacity: 1; -webkit-transform: translateY(0px);}
   7% { opacity: 1; -webkit-transform: translateY(0px); }
-15% { opacity: 0; -webkit-transform: translateY(30px); }
+8% { opacity: 0; -webkit-transform: translateY(30px); }
   100% { opacity: 0; }
 }
 @-ms-keyframes rotateWord {
     0% { opacity: 0; }
     1% { opacity: 0; -ms-transform: translateY(-30px); }
-	3% { opacity: 1; -ms-transform: translateY(0px);}
+	2% { opacity: 1; -ms-transform: translateY(0px);}
     7% { opacity: 1; -ms-transform: translateY(0px); }
-	15% { opacity: 0; -ms-transform: translateY(30px); }
+	8% { opacity: 0; -ms-transform: translateY(30px); }
     100% { opacity: 0; }
 }
 @keyframes rotateWord {
@@ -200,7 +209,7 @@ div.bullet-content:last-child{
   margin-bottom: 0px;
 }
 
-div.alternate-content > h2, div.alternate-content > h3{
+div.alternate-content > h2, div.alternate-content > h3, div.alternate-content > p{
   color: black;
 }
 
@@ -228,6 +237,12 @@ section#data-vis-4{
 
 
 /* Petition Section */
+#signatures{
+  height: 0px;
+  padding-left: 100px;
+  position: absolute;
+}
+
 #petition{
   padding-top: 100px;
   background-color: black;
@@ -255,7 +270,7 @@ input[type="text"], textarea {
   color: white;
   font-size: 1.5em;
   padding: 5px;
-  background-color: black;
+  background-color: rgba(255, 0, 0, 0.0);
   border: none;
   border-bottom: solid 2px white;
   transition: border 0.3s;
@@ -292,15 +307,25 @@ img.share:hover{
 }
 
 .signature{
-  position: absolute;
-  float: left;
-  top: 0px;
-  left: 100px;
   opacity: 0.3;
+  float: left;
+  margin-right: 50px;
+  color: black;
 }
 
 /* FAQ Section */
 #faq{
   padding-top: 100px;
   color: black;
+}
+.faq-number{
+  font-weight: 700;
+  font-size: 12.0em;
+}
+div.faq > p{
+  font-size: 1.3em;
+}
+div.faq{
+  margin-top: 50px;
+  min-height: 190px;
 }
