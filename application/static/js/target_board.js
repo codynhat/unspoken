@@ -25,7 +25,8 @@ for (var j = 0; j < years.length; j++){
 
 
   var g2 = g.append("g").attr('id', 'g2-'+j);
-  d3.select("#board-"+year).append("h2").attr('class', 'board-year').attr('style', 'color:black').text(year);
+  d3.select("#board-"+year).append("h2").attr('class', 'board-year').text(year).attr('style', 'font-size: 1.5em;color:black');
+  d3.select("#board-"+year).append("h2").attr('class', 'board-year').attr('id', 'num-'+year).attr('style', 'font-size: 2em');
 }
 
 function showBullets(){
@@ -52,12 +53,16 @@ function showBullets(){
           .transition()
           .delay(Math.log(i+10)*1800 - 2000)
           .style("visibility", "visible");
+      d3.select('#num-'+year)
+          .transition()
+          .delay(Math.log(i+10)*1800 - 2000)
+          .text(i+1);
     }
   }
 }
 
 $(window).scroll(function(){
-  if($(window).scrollTop() > $("#data-vis-3").position().top-300 && started == false){
+  if($(window).scrollTop() > $("#data-vis-3").position().top-550 && started == false){
     showBullets();
   }
 });

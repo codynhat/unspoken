@@ -21,8 +21,8 @@ $(function() {
 
 
 /* Share buttons */
-$('#btn-facebook').attr('href', 'https://www.facebook.com/sharer/sharer.php?u=http%3A//www.unspoken.io');
-$('#btn-twitter').attr('href', 'https://twitter.com/intent/tweet?text=message&url=http%3A//www.unspoken.io');
+$('#btn-facebook').attr('href', 'https://www.facebook.com/sharer/sharer.php?u=http%3A//www.unspoken.io&text=I have spoken my fear and requested mandated safety training @universityoforegon.');
+$('#btn-twitter').attr('href', 'https://twitter.com/intent/tweet?url=http%3A//www.unspoken.io&text=I have spoken my fear and requested mandated safety training @universityoforegon.');
 
 
 /* Petition Form */
@@ -80,10 +80,14 @@ $("#sign").click(function(){
 
 function load_signatures(data) {
     $('#signatures').empty();
+    $('#signatures').css('height', $('#petition').height()-100);
+    var fonts = ['lamar-pen', 'american-scribe', 'lakeside'];
     var results = data["results"];
-    for(var i = 0; i < results.length; i++){
+    var len = Math.min(results.length, 200);
+    for(var i = 0; i < len; i++){
       var name = results[i];
-      var signature = $("<h2>").text(name).attr('class', 'signature');
+      var font_i = Math.floor((Math.random() * fonts.length));
+      var signature = $("<h2>").text(name).attr('class', 'signature').css('font-family', fonts[font_i]);
       $('#signatures').prepend(signature);
     }
 }

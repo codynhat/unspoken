@@ -167,6 +167,7 @@ img#scroll-button:hover{
 #data-vis-1{
   padding-top: 100px;
   background-color: black;
+  padding-bottom: 100px;
 }
 .svg-icon{
   font-family: FontAwesome;
@@ -221,13 +222,19 @@ section#data-vis-3{
 }
 
 div.board{
-  background-color: #FFDFBA;
+  background-color: rgba(147,149,152,0.6);
   text-align: center;
   height: 425px;
   width: 90%;
   margin: 20px;
-  margin-top: 100px;
+  margin-top: 50px;
   display: inline-block;
+}
+
+.board-year{
+  font-size: 1.7em;
+  color: white;
+  margin-top: 0;
 }
 
 /* Info Data Vis */
@@ -238,9 +245,11 @@ section#data-vis-4{
 
 /* Petition Section */
 #signatures{
-  height: 0px;
-  padding-left: 100px;
+  padding-left: 7%;
+  padding-right: 0;
   position: absolute;
+  width: 100%;
+  overflow: hidden;
 }
 
 #petition{
@@ -307,10 +316,11 @@ img.share:hover{
 }
 
 .signature{
-  opacity: 0.3;
+  opacity: 0.6;
   float: left;
   margin-right: 50px;
   color: black;
+  font-size: 1.7em;
 }
 
 /* FAQ Section */
@@ -324,6 +334,7 @@ img.share:hover{
 }
 div.faq > p{
   font-size: 1.3em;
+  text-align: left;
 }
 div.faq{
   margin-top: 50px;
