@@ -188,17 +188,22 @@ img#scroll-button:hover{
 /* Bullets Data Vis */
 section#data-vis-2{
   background-color: rgb(188, 190, 192);
-  padding-bottom: 400px;
+  padding-bottom: 200px;
   padding-top: 100px;
 }
 
 #bullets{
-  margin-top: 200px;
+  margin-left: 0;
+  padding-right: 0;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
 }
 
 img.bullet{
-  height: 150px;
+  height: 100px;
   position: absolute;
+  opacity: 0.5;
 }
 
 div.bullet-content{
