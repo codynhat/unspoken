@@ -174,14 +174,16 @@ img#scroll-button:hover{
   font-size: 21px;
 }
 
-.btn-primary{
+.btn-custom{
   background-color: #ff3333;
   border-color: #ff3333;
+  color: white;
 }
 
-.btn-primary:hover{
+.btn-custom:hover{
   background-color: rgb(172, 44, 20);
   border-color: rgb(172, 44, 20);
+  color: white;
 }
 
 
@@ -200,6 +202,15 @@ section#data-vis-2{
   overflow: hidden;
 }
 
+#bullets-background{
+  background-color: black;
+  position: absolute;
+  width: 55%;
+  margin-left: 22.5%;
+  margin-top: -40px;
+  opacity: 0.7;
+}
+
 img.bullet{
   height: 100px;
   position: absolute;
@@ -212,7 +223,19 @@ div.bullet-content{
 }
 
 div.bullet-content:last-child{
+  margin-top: -75px;
   margin-bottom: 0px;
+}
+
+div.bullet-content:last-child > h2 {
+  font-size: 2em;
+}
+
+hr.bullet{
+  border-color: #ff3333;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 80%;
 }
 
 div.alternate-content > h2, div.alternate-content > h3, div.alternate-content > p{
@@ -321,11 +344,11 @@ img.share:hover{
 }
 
 .signature{
-  opacity: 0.6;
+  opacity: 0.8;
   float: left;
   margin-right: 50px;
-  color: black;
-  font-size: 1.7em;
+  color: #555555;
+  font-size: 1.8em;
 }
 
 /* FAQ Section */
@@ -339,7 +362,6 @@ img.share:hover{
 }
 div.faq > p{
   font-size: 1.3em;
-  text-align: left;
 }
 div.faq{
   margin-top: 50px;

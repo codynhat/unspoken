@@ -1,5 +1,7 @@
 /* Bullets */
 
+$('#bullets-background').height($('#data-vis-2').height()+80);
+
 /* Layout initial positions. No more than 25 bullets. Same amount on each row. */
 var row_width = $('#bullets').width();
 var bullet_width = 38;

@@ -81,13 +81,13 @@ $("#sign").click(function(){
 function load_signatures(data) {
     $('#signatures').empty();
     $('#signatures').css('height', $('#petition').height()-100);
-    var fonts = ['lamar-pen', 'american-scribe', 'lakeside'];
+    var fonts = ['lamar-pen'];
     var results = data["results"];
     var len = Math.min(results.length, 200);
     for(var i = 0; i < len; i++){
       var name = results[i];
-      var font_i = Math.floor((Math.random() * fonts.length));
-      var signature = $("<h2>").text(name).attr('class', 'signature').css('font-family', fonts[font_i]);
+      // var font_i = Math.floor((Math.random() * fonts.length));
+      var signature = $("<h2>").text(name).attr('class', 'signature').css('font-family', fonts[0]);
       $('#signatures').prepend(signature);
     }
 }

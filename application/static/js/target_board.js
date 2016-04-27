@@ -62,7 +62,7 @@ function showBullets(){
 }
 
 $(window).scroll(function(){
-  if($(window).scrollTop() > $("#data-vis-3").position().top-550 && started == false){
+  if($(window).scrollTop() > $("#data-vis-3").position().top-600 && started == false){
     showBullets();
   }
 });
