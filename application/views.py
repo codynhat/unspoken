@@ -1,5 +1,8 @@
 from flask import render_template, jsonify, request
 from application import app, conn
+from mixpanel import Mixpanel
+
+mp = Mixpanel("e25bfe00c1f58cb35f850ae58bd8378b")
 
 @app.route("/")
 def index():
@@ -14,6 +17,12 @@ def petition():
         last_name = request.form['last_name']
         email = request.form['email']
         story = request.form.get('story')
+
+        mp.people_set(email, {
+            '$first_name'    : first_name,
+            '$last_name'     : last_name,
+            '$email'         : email
+        })
 
         cur.execute("INSERT INTO signature (first_name, last_name, email, story) VALUES (%s, %s, %s, %s);", (first_name, last_name, email, story))
 
