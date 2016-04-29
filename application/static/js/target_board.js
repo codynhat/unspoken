@@ -35,6 +35,8 @@ function showBullets(){
     var year = years[j];
     var t = ts[j];
     var g2 = d3.select('#g2-'+j);
+    d3.select('#num-'+year).text("");
+    g2.selectAll("*").remove();
     for(var i = 0; i < t; i += 1){
       var minx = -((width/2)/t)*i*1.5 + (width/2);
       var maxx = ((width/2)/t)*i*1.5 + (width/3);
@@ -51,18 +53,19 @@ function showBullets(){
           .attr("y", y)
           .style("visibility", "hidden")
           .transition()
-          .delay(Math.log(i+10)*1800 - 2000)
+          .delay((Math.log(i+10)-1)*1800 - 2000)
           .style("visibility", "visible");
       d3.select('#num-'+year)
           .transition()
-          .delay(Math.log(i+10)*1800 - 2000)
+          .delay((Math.log(i+10)-1)*1800 - 2000)
           .text(i+1);
     }
   }
+  setTimeout(showBullets, 5000);
 }
 
 $(window).scroll(function(){
-  if($(window).scrollTop() > $("#data-vis-3").position().top-600 && started == false){
+  if($(window).scrollTop() > $("#target-trigger").position().top && started == false){
     showBullets();
   }
 });
