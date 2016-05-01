@@ -47,7 +47,7 @@ $(window).resize(create_bullets);
 
 
 $(window).scroll(function(){
-  if($(window).scrollTop() < $("#bullet-trigger").position().top-300 || $(window).scrollTop() > $("#bullet-trigger").position().top+300){
+  if($(window).scrollTop() < $("#bullet-trigger").position().top-300 || $(window).scrollTop() > $("#target-trigger").position().top+300){
     return;
   }
   var offset = $('#bullets').height(); // When bullets start
@@ -58,19 +58,19 @@ $(window).scroll(function(){
       $("#bullet" + n).css({
           opacity: function(index, value) {
             if(n % 3 != 0){
-              var p1 = 0.5-(($(window).scrollTop()-$("#bullet-trigger").position().top+50)/offset);
-              if(p1 < 0.2){
-                p1 = 0.2;
-              }
-              if(p1 > 0.5){
-                p1 = 0.5;
-              }
-              return p1;
+              // var p1 = 0.5-(($(window).scrollTop()-$("#bullet-trigger").position().top+50)/offset);
+              // if(p1 < 0.2){
+              //   p1 = 0.2;
+              // }
+              // if(p1 > 0.5){
+              //   p1 = 0.5;
+              // }
+              // return p1;
             }
             else{
-              var p = (($(window).scrollTop()-$("#bullet-trigger").position().top+50)/offset) + 0.5;
-              if(p < 0.5){
-                p = 0.5;
+              var p = Math.sin((($(window).scrollTop()-$("#bullet-trigger").position().top+50)/offset)* 10);
+              if(p < 0.0){
+                p = 0.0;
               }
               return p;
             }

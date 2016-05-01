@@ -8,10 +8,6 @@ mp = Mixpanel("e25bfe00c1f58cb35f850ae58bd8378b")
 def index():
     return render_template('index.html')
 
-@app.route("/faq")
-def faq():
-    return render_template('faq.html')
-
 @app.route("/_petition", methods=['GET', 'POST'])
 def petition():
     cur = conn.cursor()

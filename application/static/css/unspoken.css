@@ -375,16 +375,41 @@ img.share:hover{
   float: left;
   margin-right: 50px;
   color: #555555;
-  font-size: 1.8em;
+  font-size: 2.7em;
 }
 
 /* Survey */
-.survey{
+h2.survey{
+  font-size: 4em;
+}
+img.survey{
   width: 100%;
+}
+.definitions{
+  width: 58.3%;
+  margin-left: 20.83%;
+  margin-bottom: 5vw;
+}
+#survey{
+  padding-top: 100px;
+}
+
+div.survey{
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /* FAQ Section */
-a.faq{
+img#scroll-button-faq{
+  width: 50px;
+  margin-top: 0px;
+}
+
+img#scroll-button-faq:hover{
+  opacity: 0.6;
+}
+
+h2.faq{
   color: rgb(188, 190, 192);
   font-size: 2em;
   font-weight: bold;

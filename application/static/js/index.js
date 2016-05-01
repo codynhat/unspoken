@@ -81,7 +81,7 @@ $("#sign").click(function(){
 function load_signatures(data) {
     $('#signatures').empty();
     $('#signatures').css('height', $('#petition').height()-100);
-    var fonts = ['lamar-pen'];
+    var fonts = ['american-scribe'];
     var results = data["results"];
     var len = Math.min(results.length, 200);
     for(var i = 0; i < len; i++){

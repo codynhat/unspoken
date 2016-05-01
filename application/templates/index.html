@@ -76,6 +76,9 @@ mixpanel.init("e25bfe00c1f58cb35f850ae58bd8378b");</script><!-- end Mixpanel -->
           </div>
         </div>
         <div class="row">
+          <div class="definitions">
+              <img class="survey" src="{{ url_for('static', filename='img/survey results-01.png') }}"/>
+          </div>
           <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">
             <div class="btn-group btn-group-justified">
               <a id="school_button" class="btn btn-custom">School Shootings</a>
@@ -110,7 +113,6 @@ mixpanel.init("e25bfe00c1f58cb35f850ae58bd8378b");</script><!-- end Mixpanel -->
               <h2>This means that every 3 school days...<br><br>We run the risk of a shooting happening on school grounds.</h2>
           </div>
         </span>
-
         </div>
       </section>
       <span id="target-trigger"></span>
@@ -134,12 +136,19 @@ mixpanel.init("e25bfe00c1f58cb35f850ae58bd8378b");</script><!-- end Mixpanel -->
         </div>
       </section>
       <span id="target-trigger-1"></span>
-      <section>
+      <section id="survey">
         <div class="row">
-          <div class="col-xs-12">
-              <img  class="survey" src="{{ url_for('static', filename='img/survey results-01.png') }}"/>
+          <div class="col-xs-10 col-xs-offset-1 text-center alternate-content">
+              <h2 class="survey">THE CURRENT SITUATION</h2>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 text-center alternate-content">
+              <h3>These findings are from a random survey from 20 departments across campus disseminated via email and social media. We received almost 500 responses from faculty, staff and students about active shooter training.</h3>
+          </div>
+          <div class="survey col-xs-10 col-xs-offset-1 alternate-content">
               <img class="survey" src="{{ url_for('static', filename='img/survey results-02.png') }}"/>
               <img class="survey" src="{{ url_for('static', filename='img/survey results-03.png') }}"/>
+              <img class="survey" src="{{ url_for('static', filename='img/survey results-04.png') }}"/>
+              <img class="survey" src="{{ url_for('static', filename='img/survey results-05.png') }}"/>
           </div>
         </div>
       </section>
@@ -160,7 +169,7 @@ mixpanel.init("e25bfe00c1f58cb35f850ae58bd8378b");</script><!-- end Mixpanel -->
               <h3 class='petition'><i>I request that the University of Oregon administration require active shooter trainings for faculty, staff, and students.</i></h3>
           </div>
         </div>
-        <div class="row" style="padding-bottom: 8vw;">
+        <div class="row" style="padding-bottom: 50px;">
           <div class="col-xs-10 col-xs-offset-1 col-lg-2 col-lg-offset-5 text-center">
               <h4 class="status">*Name and email are required</h4>
           </div>
@@ -182,7 +191,64 @@ mixpanel.init("e25bfe00c1f58cb35f850ae58bd8378b");</script><!-- end Mixpanel -->
           <div class="col-xs-10 col-xs-offset-1 col-lg-4 col-lg-offset-4 text-center">
               <a id="btn-facebook" target="_blank"><img class="share" src="{{ url_for('static', filename='img/facebook.png') }}"/></a>
               <a id="btn-twitter" target="_blank"><img class="share" src="{{ url_for('static', filename='img/twitter.png') }}"/></a>
-              <br><br><a class='faq' href='{{ url_for("faq") }}'>FAQ</a>
+              <br><br><br><br><h2 href="#faq" class='faq page-scroll'>FAQ</h2>
+          </div>
+          <div class="col-xs-12 text-center">
+            <a href="#faq" class="btn btn-circle page-scroll">
+                <img id="scroll-button-faq" src="{{ url_for('static', filename='img/arrow_grey.png') }}"/>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="faq">
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-2 col-sm-offset-2 text-center alternate-content">
+            <h1 class='faq-number'>1</h1>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 alternate-content faq">
+              <p>Q: What is the difference between an active shooter incidents and a mass shooting?</p>
+              <p>A: Active shooter incidents are unique because an aspect of the crime may affect the protocol in responding to the scene.
+                Both law enforcement and citizens have the potential to impact the outcome of an active shooter incident.
+                Therefore, all mass shootings are active shooter incidents; however, not all active shooter incidents are mass shootings because of the minimum four deaths to meet the mass shooting criteria.</p>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-2 col-sm-offset-2 text-center alternate-content">
+            <h1 class='faq-number'>2</h1>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 alternate-content faq">
+              <p>Q: Does University of Oregon currently have an active shooter training program?</p>
+              <p>A: Yes they currently do, however as stated previously they are not mandated by the University. They live exclusively on the University’s Emergency Risk Services site. For students, in person training sessions need to be scheduled 3-6 weeks in advance with a group of fellow students. Based on our survey, 73% of 100+ faculty and staff have not attended or used these trainings.</p>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-2 col-sm-offset-2 text-center alternate-content">
+            <h1 class='faq-number'>3</h1>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 alternate-content faq">
+              <p>Q: Are you guys focusing on this stuff as part of a conspiracy to take away Americans' gun rights?</p>
+              <p>A: No. Clearly the current rhetoric is not working as we are still experiencing an increase in active shooter incidents is undeniable. We are simply looking for a way to increase the safety of faculty, staff and students on campus. We wish not to engage in the politically-weighted debate over firearm rights.</p>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-2 col-sm-offset-2 text-center alternate-content">
+            <h1 class='faq-number'>4</h1>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 alternate-content faq">
+              <p>Q: By signing this petition what exactly am I asking the University? </p>
+              <p>A: By signing this petition, you agree with the statement that the University of Oregon should do more to ensure students safety i.e. provide active shooter training. The University of Oregon has the opportunity to further leverage federal resources made available to institutions of higher education in order to increase our safety.</p>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-2 col-sm-offset-2 text-center alternate-content">
+            <h1 class='faq-number'>5</h1>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 alternate-content faq">
+              <p>Q: Are you promoting lockdown drills? Because I am completely against that.</p>
+              <p>A: Lockdown drills are not the purpose of this project. Rather we want to provide general skills in order to survive active shooter training.</p>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-2 col-sm-offset-2 text-center alternate-content">
+            <h1 class='faq-number'>6</h1>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 alternate-content faq">
+              <p>Q: What type of training are you proposing?</h3>
+              <p>A: The University of Oregon can provide engaging materials that are designed to inform and educate students about what to do in an active shooter situation.</p>
+          </div>
+          <div class="col-xs-8 col-xs-offset-2 text-center alternate-content faq">
+              <p>Have another question?</h3>
+              <p>Email us at <a href="mailto://unspokenuo@gmail.com">unspokenuo@gmail.com</a></p>
           </div>
         </div>
       </section>
