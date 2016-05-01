@@ -385,17 +385,25 @@ h2.survey{
 img.survey{
   width: 100%;
 }
+
 .definitions{
   width: 58.3%;
   margin-left: 20.83%;
   margin-bottom: 5vw;
+}
+@media (max-width: 768px) {
+  .definitions{
+    width: 110%;
+    margin-left: -5%;
+    margin-bottom: 5vw;
+  }
 }
 #survey{
   padding-top: 100px;
 }
 
 div.survey{
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 100px;
 }
 
