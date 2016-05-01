@@ -47,8 +47,10 @@ $(window).resize(create_bullets);
 
 
 $(window).scroll(function(){
+  if($(window).scrollTop() < $("#bullet-trigger").position().top-300 || $(window).scrollTop() > $("#bullet-trigger").position().top+300){
+    return;
+  }
   var offset = $('#bullets').height(); // When bullets start
-
   var n = 0;
   for(var i = 0; i < 10; i++){
     for(var a = 0; a < bullets_per_row; a++){
@@ -56,7 +58,7 @@ $(window).scroll(function(){
       $("#bullet" + n).css({
           opacity: function(index, value) {
             if(n % 3 != 0){
-              var p1 = 0.5-(($(window).scrollTop()-$("#bullet-trigger").position().top+150)/offset);
+              var p1 = 0.5-(($(window).scrollTop()-$("#bullet-trigger").position().top+50)/offset);
               if(p1 < 0.2){
                 p1 = 0.2;
               }
@@ -66,7 +68,7 @@ $(window).scroll(function(){
               return p1;
             }
             else{
-              var p = (($(window).scrollTop()-$("#bullet-trigger").position().top+150)/offset) + 0.5;
+              var p = (($(window).scrollTop()-$("#bullet-trigger").position().top+50)/offset) + 0.5;
               if(p < 0.5){
                 p = 0.5;
               }

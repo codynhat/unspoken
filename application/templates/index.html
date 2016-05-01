@@ -38,10 +38,10 @@ mixpanel.init("e25bfe00c1f58cb35f850ae58bd8378b");</script><!-- end Mixpanel -->
     <div class="container-fluid">
       <section id="intro">
         <div class="row">
-          <div class="col-xs-8 col-xs-offset-2"><img id="logo" class="img-responsive" src="{{ url_for('static', filename='img/logo.png') }}"/> </div>
+          <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2"><img id="logo" class="img-responsive" src="{{ url_for('static', filename='img/logo.png') }}"/> </div>
         </div>
         <div class="row">
-          <div class="col-xs-8 col-xs-offset-2 text-center">
+          <div class="col-xs-10 col-xs-offset-1 text-center">
             <h2>What would you do if this time it happened in your</h2>
           </div>
           <div class="col-xs-12 text-center">
@@ -50,10 +50,10 @@ mixpanel.init("e25bfe00c1f58cb35f850ae58bd8378b");</script><!-- end Mixpanel -->
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-8 col-xs-offset-2 text-center">
+          <div class="col-xs-10 col-xs-offset-1 text-center">
             <p>Fear starts small in the pit of our stomachs but grows and grows<br>until it takes over our spaces.</p>
           </div>
-          <div class="col-xs-8 col-xs-offset-2 text-center" style="margin-top:2vw;">
+          <div class="col-xs-10 col-xs-offset-1 text-center" style="margin-top:2vw;">
             <h2>This feeling often goes <span style="font-weight: 500;color: black;">unspoken.</span></h2>
           </div>
         </div>
@@ -67,7 +67,7 @@ mixpanel.init("e25bfe00c1f58cb35f850ae58bd8378b");</script><!-- end Mixpanel -->
       </section>
       <section id="data-vis-1">
         <div class="row" style="margin-bottom: 5vw;">
-          <div class="col-xs-8 col-xs-offset-2 col-lg-6 col-lg-offset-3 text-center">
+          <div class="col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-3 text-center">
               <h2>We’ve seen this happen too many times.</h2>
 
               <h3>In the last 5 years, there were 198 active shooter incidents on school grounds and 22 mass shootings. </h3>
@@ -76,7 +76,7 @@ mixpanel.init("e25bfe00c1f58cb35f850ae58bd8378b");</script><!-- end Mixpanel -->
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">
             <div class="btn-group btn-group-justified">
               <a id="school_button" class="btn btn-custom">School Shootings</a>
               <a id="mass_button" class="btn btn-default">Mass Shootings</a>
@@ -96,46 +96,50 @@ mixpanel.init("e25bfe00c1f58cb35f850ae58bd8378b");</script><!-- end Mixpanel -->
         <div id="bullets-background"></div>
         <div class="row">
           <span>
-          <div class="col-xs-8 col-xs-offset-2 col-lg-6 col-lg-offset-3 text-center bullet-content">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-center bullet-content">
               <h2>Since 2011, there have been 198 active shooter incidents.</h2>
           </div>
-          <div class="col-xs-8 col-xs-offset-2 col-lg-6 col-lg-offset-3 text-center bullet-content">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-center bullet-content">
               <h3>If you look at it in terms of school years, there were almost 20 school shootings per semester.</h3>
           </div>
-          <div class="col-xs-8 col-xs-offset-2 col-lg-6 col-lg-offset-3 text-center bullet-content">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-center bullet-content">
               <h3>20 shootings in 65 school days.</h3>
               <hr class='bullet'>
           </div>
-          <div class="col-xs-8 col-xs-offset-2 col-lg-6 col-lg-offset-3 text-center bullet-content">
-              <h2 id="target-trigger">This means that every 3 school days...<br><br>We run the risk of a shooting happening on school grounds.</h2>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-center bullet-content">
+              <h2>This means that every 3 school days...<br><br>We run the risk of a shooting happening on school grounds.</h2>
           </div>
         </span>
 
         </div>
       </section>
+      <span id="target-trigger"></span>
       <section id="data-vis-3">
         <div class="row">
-          <div class="col-xs-8 col-xs-offset-2 text-center">
+          <div class="col-xs-10 col-xs-offset-1 text-center">
               <h2>The number of bullet holes on each target represent the number of shootings that took place in each respective year.</h2>
           </div>
-          <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-0 col-lg-3 text-center">
+          <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0 col-lg-3 text-center">
             <div id="board-2013" class="board"></div>
           </div>
-          <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-0 col-lg-3 text-center">
+          <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0 col-lg-3 text-center">
             <div id="board-2014" class="board"></div>
           </div>
-          <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-0 col-lg-3 text-center">
+          <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0 col-lg-3 text-center">
             <div id="board-2015" class="board"></div>
           </div>
-          <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-0 col-lg-3 text-center">
+          <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0 col-lg-3 text-center">
             <div id="board-2016" class="board"></div>
           </div>
         </div>
       </section>
+      <span id="target-trigger-1"></span>
       <section>
         <div class="row">
-          <div class="col-xs-8 col-xs-offset-2 col-lg-6 col-lg-offset-3 text-center">
-              <h2>INFOGRAPHIC</h2>
+          <div class="col-xs-12">
+              <img  class="survey" src="{{ url_for('static', filename='img/survey results-01.png') }}"/>
+              <img class="survey" src="{{ url_for('static', filename='img/survey results-02.png') }}"/>
+              <img class="survey" src="{{ url_for('static', filename='img/survey results-03.png') }}"/>
           </div>
         </div>
       </section>
@@ -143,7 +147,7 @@ mixpanel.init("e25bfe00c1f58cb35f850ae58bd8378b");</script><!-- end Mixpanel -->
         <div id="signatures">
         </div>
         <div class="row" style="margin-bottom: 5vw;">
-          <div class="col-xs-8 col-xs-offset-2 col-lg-6 col-lg-offset-3 text-center">
+          <div class="col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-3 text-center">
               <h4 class='petition'>It is time to take matters into our own hands. We do not want our fears to remain unspoken while we wait for administrative action. If you would like to be part of this solution, please consider signing our petition.</h4>
               <h4 class='petition'>Together we can take back our spaces.</h4>
 
@@ -183,7 +187,7 @@ mixpanel.init("e25bfe00c1f58cb35f850ae58bd8378b");</script><!-- end Mixpanel -->
         </div>
       </section>
   </div>
-    <div id="progress-col"><div id="progress-bar"></div></div>
+    <div id="progress-col" class="hidden-xs"><div id="progress-bar"></div></div>
     <script type="text/javascript">
       mixpanel.track("Viewed Home Page");
     </script>

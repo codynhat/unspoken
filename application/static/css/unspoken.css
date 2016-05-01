@@ -106,6 +106,13 @@ h2#rotate{
 }
 
 @media (max-width: 768px) {
+  h2#rotate{
+    color: black;
+    font-size: 3em;
+    min-height: 1.1em;
+    margin-bottom: 21px;
+  }
+
   img#logo{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -216,6 +223,17 @@ section#data-vis-2{
   opacity: 0.7;
 }
 
+@media (max-width: 768px) {
+  #bullets-background{
+    background-color: black;
+    position: absolute;
+    width: 83%;
+    margin-left: 8.33%;
+    margin-top: -40px;
+    opacity: 0.7;
+  }
+}
+
 img.bullet{
   height: 100px;
   position: absolute;
@@ -259,7 +277,6 @@ div.board{
   text-align: center;
   height: 425px;
   width: 90%;
-  margin: 20px;
   margin-top: 50px;
   display: inline-block;
 }
@@ -273,6 +290,11 @@ div.board{
 /* Info Data Vis */
 section#data-vis-4{
   background-color: rgb(188, 190, 192);
+}
+
+#target-trigger{
+  position: relative;
+  top: -200px;
 }
 
 
@@ -354,6 +376,11 @@ img.share:hover{
   margin-right: 50px;
   color: #555555;
   font-size: 1.8em;
+}
+
+/* Survey */
+.survey{
+  width: 100%;
 }
 
 /* FAQ Section */
